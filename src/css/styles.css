@@ -1,0 +1,128 @@
+/* ********** Custom Propertys ********** */
+:root{
+    --main-font: 'Open Sans';
+    --alternate-font: sans-serif;
+    --logo-width:4rem;
+    --logo-height:4rem;
+    --logo-spacing:.5rem;
+    --nav-item-spacing:.5rem;
+    --main-color: #28a745;
+    --second-color:#343a40;
+    --second-text-color:rgba(255,255,255,.85);
+    --main-text-color: #515B6D;
+    --bg-color: rgb(242, 244, 247);
+    --nav-hover-color:rgba(255,255,255,.2);
+    --nav-height: 64px;
+}
+
+/* ********** Reset Styles ********** */
+html {
+    font-family: var(--main-font), var(--alternate-font);
+    font-size: var(--font-size);
+    line-height:  var(--line-height);
+    color: var(--second-text-color);
+    background-color: var(--bg-color);
+  }
+  
+  body {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    overflow-x: hidden;
+  }
+  
+h2 { font-size: 3rem; }
+
+h3 { font-size: 2.5rem; }
+
+/* ********** Bootstrap Styles ********** */
+.navbar-brand img{
+    width: auto;
+    height: var(--logo-height);
+}
+
+.nav-item{
+    min-height: var(--nav-height);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--font-color);
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover { color: var(--main-color); }
+
+.nav-item{
+    padding: var(--nav-item-spacing);
+}
+
+.nav-item:hover{
+    background-color: var(--nav-hover-color);
+    transition: all .5s ease;
+}
+
+.card{
+    color: var(--main-text-color);
+}
+
+.card img{
+    background: var(--second-color);
+}
+
+.card .card-title{
+    color: var(--second-color);
+}
+
+figure img{
+    background: var(--second-color);
+    padding: var(--nav-item-spacing);
+}
+
+figcaption{
+    text-align: center;
+}
+/* ********** My Styles ********** */
+.main{
+    color: var(--second-text-color);
+    min-height: calc(100vh + var(--logo-height));
+    background-size:auto;
+    background-color: rgb(108, 130, 145);
+    background-image: linear-gradient(135deg,rgba(47,145,224,.91),rgba(7,31,51,.97) 79%);
+    background-image:linear-gradient(131deg,rgba(28,118,173,.92), rgba(83, 184, 152, 1));
+}
+
+.secondary{
+    color: var(--main-text-color);
+    margin: var(--logo-height) 0;
+}
+
+.flow-text{
+    font-size: 1.25rem;
+}
+
+.secondary{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ********** Media Queries Small ********** */
+@media (min-width: 576px) {
+
+}
+
+/* ********** Media Queries Medium ********** */
+@media (min-width: 768px) {
+
+}
+
+/* ********** Media Queries Large ********** */
+@media (min-width: 992px) {
+   .flow-text { font-size: 1.5rem; }
+}
+
+/* ********** Media Queries ExtraLarge ********** */
+@media (min-width: 1200px) {
+
+}
